@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rgx0q70wnih3"]
+
+[ext_resource type="Script" uid="uid://cylaoqht3m76o" path="res://world.gd" id="1_ig7tw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iyjhp"]
+transparency = 1
+albedo_color = Color(0.24313726, 0.14901961, 0.73333335, 0.30980393)
+
+[node name="Node2D" type="Node3D" unique_id=269581247]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, -0.027373672, -0.026968243, -0.026968243)
+script = ExtResource("1_ig7tw")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1774897861]
+transform = Transform3D(0.9932985, -0.074049965, 0.08874337, -0.11469745, -0.726241, 0.6778049, 0.014257632, -0.6834409, -0.72986764, 0.15069261, -2.1909983, 1.8377529)
+size = Vector3(7.47876, 0.4276123, 6.794922)
+material = SubResource("StandardMaterial3D_iyjhp")
+metadata/_edit_group_ = true
+
+[node name="Camera3D" type="Camera3D" parent="CSGBox3D" unique_id=1622401256]
+transform = Transform3D(-0.9938084, -0.08600545, 0.070338264, 0.06215636, -0.95511246, -0.28964818, 0.09209232, -0.2834832, 0.95454454, -0.62162775, -1.461689, 5.1296086)
